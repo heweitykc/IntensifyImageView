@@ -69,7 +69,7 @@ public class IntensifyImageView extends View implements IntensifyImage,
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.IntensifyImageView);
 
         mDelegate.setScaleType(ScaleType.valueOf(
-                a.getInt(R.styleable.IntensifyImageView_scaleType, ScaleType.FIT_CENTER.nativeInt)));
+                a.getInt(R.styleable.IntensifyImageView_imgScaleType, ScaleType.FIT_CENTER.nativeInt)));
 
         mDelegate.setAnimateScaleType(
                 a.getBoolean(R.styleable.IntensifyImageView_animateScaleType, false));
